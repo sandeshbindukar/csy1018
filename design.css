@@ -1,4 +1,30 @@
 body
 {
+	background-color: grey;
+	margin: 0;
+	text-align: center;
+	padding: 0;
+}
+header
+{
+	background-color: red;
+	font-family: times new roman;
+	font-size: 40px;
+	padding: 3%;
+
+}
+body
+{
 	background-color: green;
+	font-size: 55px;
+	padding: 3%;
+
+}
+footer
+{
+	background-color: blue;
+	font-size: 40px;
+	padding: 3%;
+
+
 }
