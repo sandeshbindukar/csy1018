@@ -1,0 +1,54 @@
+<html>
+<head>
+	<title>Website Form</title>
+</head>
+<body>
+	<form method="post" action="/action_page.php" onsubmit="return validateform(this);">
+		<fieldset>
+			<h2>Personal Information</h2><br>
+			First name:<br>
+			<input type="text" name="firstname"><br>
+			Last name:<br>
+			<input type="text" name="lastname"><br>
+			Gender: <br>
+			<input type="radio" name="gender" value="male"> Male<br>
+	 		<input type="radio" name="gender" value="female"> Female<br>
+	  		<input type="radio" name="gender" value="other"> Other <br>
+	  		Date Of Birth:
+	  		<input type="date" name="birthday"><br>
+	  		Email Address:  
+	  		<input type="email" name="Emailaddress"><br> <br>
+	  		<input type="Submit"  value="Submit">
+		</fieldset>
+	</form>
+</body>
+
+<script type="text/javascript">
+	function validateform(fm)
+	{
+		if(fm.firstname.value==""){
+			alert("Please enter your firstname.");
+			return false;
+		}
+		if(fm.lastname.value==""){
+			alert("Please enter your lastname.");
+			return false;
+		}
+		if(fm.gender.value==""){
+			alert("Please select your gender.");
+			return false;
+		}
+		if(fm.birthday.value==""){
+			alert("Please select your Date of birth.");
+			return false;
+		}
+		if(fm.Emailaddress.value==""){
+			alert("Please enter your email address.");
+			return false;
+		}
+
+	}
+</script>
+
+</html>
+
